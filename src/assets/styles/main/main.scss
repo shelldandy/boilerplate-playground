@@ -1,5 +1,5 @@
 //
-// <%=projectName%>
+// Future
 //
 @import 'variables';
 @import 'mixins';
@@ -11,8 +11,8 @@
 :global {
   // screens:start
   @import 'screens/_base';
-  <% for(var i=1; i<=qtyScreens; i++) {%>
-  @import 'screens/screen_<%=i%>';<% } %>
+  
+  @import 'screens/screen_1';
   // screens:end
 
   // components:start
