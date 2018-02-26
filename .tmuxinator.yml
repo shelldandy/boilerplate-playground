@@ -1,0 +1,4 @@
+name: bp-playground
+windows:
+  - editor: eval $EDITOR
+  - next: yarn code
