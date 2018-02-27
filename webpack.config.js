@@ -30,7 +30,7 @@ if (shouldBeDebugMode) {
   process.env.BABEL_ENV = 'production'
 }
 
-module.exports = {
+const normalConfig = {
   entry: paths.entry,
   devtool: shouldBeDebugMode ? 'source-map' : 'inline-source-map',
   module: {
@@ -90,5 +90,10 @@ module.exports = {
       styles: paths.styles
     }
   },
-  bail: shouldBeDebugMode
+  bail: shouldBeDebugMode,
+  mode: production ? 'production' : 'development'
 }
+
+module.exports = [
+  normalConfig
+]
