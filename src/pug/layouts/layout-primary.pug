@@ -30,9 +30,7 @@ html(lang='en')
     block footer
       //- If extra footer content is necessary per page, it can be added per screen
 
-    if production
-      script(src='assets/js/main.min.js')
-    else
-      script(src='assets/js/main.js')
+    script(type='module' src='assets/js/main.js')
+    script(nomodule src='assets/js/legacy.js')
     block scripts
       //- Also if more scripts are needed you can hook in here <3
