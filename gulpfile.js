@@ -23,7 +23,8 @@ prod
 
 const prodTasks = [
   'minifyStyles',
-  'purify'
+  'purify',
+  'zip',
 ]
 
 let tasks = [
